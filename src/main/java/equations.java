@@ -1,6 +1,5 @@
 import java.util.Scanner;
 import java.lang.Math;
-import java.util.function.DoubleToIntFunction;
 
 public class equations {
 
@@ -19,7 +18,7 @@ public class equations {
         double x_1 = (-b + Math.sqrt(d))/(2*a);
         double x_2 = (-b - Math.sqrt(d))/(2*a);
 
-        if (d > 0 && x_1 == (int) x_1 && x_2 == (int) x_2){
+        if (d > 0){
             return "x1 = " + x_1 + "\n" + "x2 = " + x_2;
         }
         else {
